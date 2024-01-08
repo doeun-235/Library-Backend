@@ -1,0 +1,15 @@
+{%extends "app/base.html" %}
+
+{% block content %}
+    <h1>Book List</h1>
+    {% for book in book_list %}
+        <div>
+            <a href="/app/owned/{{book.pk}}/">
+                {{book.pk}}. {{book.author_key}}, {{book.title}}, {{book.pub_year}}
+            </a>
+        </div>
+    {% endfor %}
+    <a href="/app/owned/new/">
+        new book 
+    </a>
+{% endblock %}

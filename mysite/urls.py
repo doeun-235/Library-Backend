@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/owned/',app_views.owned_index),
     path('app/owned/<int:pk>/',app_views.owned_detail),
+    path('app/owned/new/',app_views.book_new),
 #    path('accounts/',include('accounts.urls'))
 ]

@@ -1,0 +1,10 @@
+{%extends "app/base.html" %}
+
+{% block content %}
+    <h2>Detail : {{book.code}}</h2>
+    {{book.title}}
+    <hr/>
+    <a href="/app/owned/">
+        back to the list
+    </a>
+{% endblock %}
