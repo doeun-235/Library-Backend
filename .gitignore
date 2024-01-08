@@ -1,0 +1,6 @@
+.idea
+.vscode
+venv
+.venv
+db.sqlite3
+.admin_info
